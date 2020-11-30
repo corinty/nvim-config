@@ -8,6 +8,8 @@ endif
 
 call plug#begin('~/.config/nvim/autoload/plugged')
 
+    " Plugins to be loaded for all vim
+
     " Better Comments
     Plug 'tpope/vim-commentary'
     " Convert binary, hex, etc..
@@ -18,13 +20,18 @@ call plug#begin('~/.config/nvim/autoload/plugged')
     Plug 'unblevable/quick-scope'
     " Useful for React Commenting
     Plug 'suy/vim-context-commentstring'
-    " highlight all matches under cursor
-    " Plug 'RRethy/vim-illuminate'
+
+
+
+  " VScode specific plugins
 
   if exists('g:vscode')
     " Easy motion for VSCode
   Plug 'asvetliakov/vim-easymotion'
+
   else
+
+  " Terminal Vim Plugins
 
     Plug 'justinmk/vim-sneak'
     " Surround
@@ -111,7 +118,7 @@ call plug#begin('~/.config/nvim/autoload/plugged')
     " Plug 'dense-analysis/ale'
     " Better Whitespace
     Plug 'ntpeters/vim-better-whitespace'
-    " Multiple Cursors
+    " Multiple Curs
     " TODO add this back in change from C-n
     " Plug 'mg979/vim-visual-multi', {'branch': 'master'}
     Plug 'moll/vim-bbye'

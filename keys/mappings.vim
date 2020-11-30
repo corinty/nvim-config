@@ -1,44 +1,44 @@
 " Basic Key Mappings
 
-" imap <C-h> <C-w>h
-" imap <C-j> <C-w>j
-" imap <C-k> <C-w>k
-" imap <C-l> <C-w>l
-" g Leader key
+
 let mapleader=" "
-" let localleader=" "
 nnoremap <Space> <Nop>
 
 " Better indenting
 vnoremap < <gv
 vnoremap > >gv
 
-" Close all other tabs
-nnoremap <Leader>to :tabo<CR>
+" Better nav for omnicomplete
+inoremap <expr> <c-j> ("\<C-n>")
+inoremap <expr> <c-k> ("\<C-p>")
+
+" Remaps movment to visual lines not logical ones
+nmap j gj
+nmap k gk
 
 " Faster Nav
-nnoremap J 5j
-nnoremap K 5k
+nmap J 5gj
+nmap K 5gk
+
+
+
+" Insert line without insert mode
+nmap <CR> o<Esc>
 
 if exists('g:vscode')
-
   " Simulate same TAB behavior in VSCode
   nmap <Tab> :Tabnext<CR>
   nmap <S-Tab> :Tabprev<CR>
 
 else
 
-  " Better nav for omnicomplete
+  " Better nav for omnicompletet
   inoremap <expr> <c-j> ("\<C-n>")
   inoremap <expr> <c-k> ("\<C-p>")
 
   " I hate escape more than anything else
   inoremap jk <Esc>
   inoremap kj <Esc>
-
-  " Easy CAPS
-  " inoremap <c-u> <ESC>viwUi
-  " nnoremap <c-u> viwU<Esc>
 
   " TAB in general mode will move to text buffer
   nnoremap <silent> <TAB> :bnext<CR>
@@ -77,7 +77,3 @@ else
 
 
 endif
-
-" Better nav for omnicomplete
-inoremap <expr> <c-j> ("\<C-n>")
-inoremap <expr> <c-k> ("\<C-p>")

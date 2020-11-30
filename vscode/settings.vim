@@ -79,3 +79,4 @@ nnoremap <silent> <Leader>o :call VSCodeNotify("workbench.action.gotoSymbol")<CR
 
 
 nnoremap <silent> B ^
+
