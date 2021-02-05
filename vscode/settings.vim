@@ -63,7 +63,18 @@ nnoremap <silent> <Leader>h :call VSCodeNotify('workbench.action.navigateLeft')<
 xnoremap <silent> <Leader>h :call VSCodeNotify('workbench.action.navigateLeft')<CR>
 nnoremap <silent> <Leader>l :call VSCodeNotify('workbench.action.navigateRight')<CR>
 xnoremap <silent> <Leader>l :call VSCodeNotify('workbench.action.navigateRight')<CR>
+nnoremap <silent> x :call VSCodeNotify('workbench.action.closeActiveEditor')<CR>
+xnoremap <silent> x :call VSCodeNotify('workbench.action.closeActiveEditor')<CR>
+" Open up commands
+nnoremap <silent> <Leader>; :call VSCodeNotify('workbench.action.showCommands')<CR>
+xnoremap <silent> <Leader>; :call VSCodeNotify('workbench.action.showCommands')<CR>
 
+
+" Fold Commands
+nnoremap <silent> <Leader> :call VSCodeNotify('editor.fold')<CR>
+nnoremap zo :call VSCodeNotify('editor.unfold')<CR>
+nnoremap zM :call VSCodeNotify('editor.foldAll')<CR>
+nnoremap zR :call VSCodeNotify('editor.unfoldAll')<CR>
 " Bind C-/ to vscode commentary since calling from vscode produces double comments due to multiple cursors
 xnoremap <silent> <C-/> :call Comment()<CR>
 nnoremap <silent> <C-/> :call Comment()<CR>
@@ -72,11 +83,9 @@ nnoremap <silent> <C-/> :call Comment()<CR>
 nnoremap <silent> <Space> :call VSCodeNotify('whichkey.show')<CR>
 noremap <silent> <Space> :call VSCodeNotify('whichkey.show')<CR>
 
-nnoremap <silent> <Leader>e :call VSCodeNotify("workbench.view.explorer")<CR>
 nnoremap <silent> <Leader>p :call VSCodeNotify("workbench.action.quickOpen")<CR>
 nnoremap <silent> <Leader>o :call VSCodeNotify("workbench.action.gotoSymbol")<CR>
 
 
 
 nnoremap <silent> B ^
-

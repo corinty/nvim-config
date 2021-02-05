@@ -4,12 +4,16 @@
 let mapleader=" "
 nnoremap <Space> <Nop>
 
+" Chaning the a
+nmap a A
+
 " Better indenting
 vnoremap < <gv
 vnoremap > >gv
 
 " Better nav for omnicomplete
 inoremap <expr> <c-j> ("\<C-n>")
+
 inoremap <expr> <c-k> ("\<C-p>")
 
 " Remaps movment to visual lines not logical ones
@@ -35,6 +39,8 @@ else
   " Better nav for omnicompletet
   inoremap <expr> <c-j> ("\<C-n>")
   inoremap <expr> <c-k> ("\<C-p>")
+
+
 
   " I hate escape more than anything else
   inoremap jk <Esc>

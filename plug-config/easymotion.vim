@@ -18,7 +18,7 @@ let g:EasyMotion_smartcase = 1
 nmap s <Plug>(easymotion-s2)
 map  n <Plug>(easymotion-next)
 map  N <Plug>(easymotion-prev)
-" nmap s <Plug>(easymotion-overwin-f2)
+" nmap s <workbench.action.closeActiveEditorPlug>(easymotion-overwin-f2)
 " nmap S <Plug>(easymotion-overwin-t)
 
 " Move to line
