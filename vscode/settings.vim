@@ -63,8 +63,6 @@ nnoremap <silent> <Leader>h :call VSCodeNotify('workbench.action.navigateLeft')<
 xnoremap <silent> <Leader>h :call VSCodeNotify('workbench.action.navigateLeft')<CR>
 nnoremap <silent> <Leader>l :call VSCodeNotify('workbench.action.navigateRight')<CR>
 xnoremap <silent> <Leader>l :call VSCodeNotify('workbench.action.navigateRight')<CR>
-nnoremap <silent> x :call VSCodeNotify('workbench.action.closeActiveEditor')<CR>
-xnoremap <silent> x :call VSCodeNotify('workbench.action.closeActiveEditor')<CR>
 " Open up commands
 nnoremap <silent> <Leader>; :call VSCodeNotify('workbench.action.showCommands')<CR>
 xnoremap <silent> <Leader>; :call VSCodeNotify('workbench.action.showCommands')<CR>
@@ -85,6 +83,9 @@ noremap <silent> <Space> :call VSCodeNotify('whichkey.show')<CR>
 
 nnoremap <silent> <Leader>p :call VSCodeNotify("workbench.action.quickOpen")<CR>
 nnoremap <silent> <Leader>o :call VSCodeNotify("workbench.action.gotoSymbol")<CR>
+
+"Close Other Tabs
+nnoremap <silent> <C-c> :call VSCodeNotify("workbench.action.closeOtherEditors")<CR>
 
 
 
